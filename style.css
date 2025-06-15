@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+:root{
+    --font-oswald: 'Oswald', sans-serif;
+    --font-source-code: 'Source Code Pro', monospace;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: #f0f0f0;
+    --padding-section:60px;
+    --padding-small:30px;
+    --font-size-h1:24px;
+    --font-size-h2:70px;
+    --font-size-h3:14px;
+    --font-size-p:14px;
+    --line-height-p:24px;
+    --letter-spacing-h2:10px;
+    --letter-spacing-h3:8px;
+    --overlay-opacity:0.7;
+}
+#main{
+    width:100%; padding:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+.margin-top-10{padding-top:10px;}
+
+#parallax-navaneet h1{
+    font-family: var(--font-oswald);
+    font-size: var(--font-size-h1);
+    font-weight: 400;
+    color: var(--color-black);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+
+}
+#parallax-navaneet h2{
+    font-family: var(--font-oswald);
+    font-size: var(--font-size-h2);
+    letter-spacing: var(--letter-spacing-h2);
+    text-align: center;
+    font-weight: 400;
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin: 0;
+    z-index: 10;
+    opacity: 0.9;
+    
+}
+#parallax-navaneet h3{
+    font-family: var(--font-oswald);
+    font-size: var(--font-size-h3);
+    letter-spacing: var(--letter-spacing-h3);
+    font-weight: 400;
+    color: var(--color-black);
+    text-transform: uppercase;
+    
+    
+}
+#parallax-navaneet p{
+    font-family: var(--font-source-code);
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    color: var(--color-black);
+   
+}
+
+.first-character{
+    font-size:84px;
+    font-weight: 400;
+    float:left;
+    padding-top:4px;
+    padding-right:8px;
+    padding-left:3px;
+}
+
+#parallax-navaneet .title{
+    background-color: var(--color-white);
+    padding: var(--padding-section);
+    margin:0 auto;
+    text-align: center;
+}
+#parallax-navaneet .title h1{
+    font-size:35px;
+    letter-spacing: var(--letter-spacing-h3);
+}
+#parallax-navaneet .block{
+    text-align: justify;
+    width:820px;
+    margin:0 auto;
+    background-color: var(--color-white);
+    padding: var(--padding-section);
+}
+
+#parallax-navaneet .parallax-one,
+#parallax-navaneet .parallax-two,
+#parallax-navaneet .parallax-three{
+    padding-top:200px;
+    padding-bottom:200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center center;
+}
+
+#parallax-navaneet .parallax-one{
+    background-image: url('https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWxnb3JpdGhtc3xlbnwwfHwwfHx8MA%3D%3D');
+}
+#parallax-navaneet .parallax-two{
+    background-image: url('https://media.istockphoto.com/id/2216950528/photo/digital-representation-of-email-and-networking-in-a-futuristic-environment.webp?a=1&b=1&s=612x612&w=0&k=20&c=HNmx6PjyOa0eHwSGGM8EH9CNBfb72roJKdfy_QqI-HA=');
+}
+#parallax-navaneet .parallax-three{
+    background-image: url('https://images.unsplash.com/photo-1717444308866-dcfc964bab23?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFsZ29yaXRobXN8ZW58MHx8MHx8fDA%3D');
+}
+
+#parallax-navaneet .line-break{
+    border-bottom:1px solid var(--color-black);
+    width: 200px;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width:959px) {
+    #parallax-navaneet .block{
+        padding:20px;
+        width:628px;
+    }
+}
+@media screen and (max-width:767px){
+    #parallax-navaneet .block{
+        padding:var(--padding-small);
+        width:420px;
+    }
+#parallax-navaneet .parallax-one,
+#parallax-navaneet .parallax-two,
+#parallax-navaneet .parallax-three{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+}
+
+@media screen and (max-width:479px){
+    #parallax-navaneet h1{
+        font-size:20px;
+    }
+    #parallax-navaneet .block{
+        padding:30px 15px;
+        width:200px;
+    }
+#parallax-navaneet .parallax-one,
+#parallax-navaneet .parallax-two,
+#parallax-navaneet .parallax-three{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+}
