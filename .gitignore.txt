@@ -1,9 +1,16 @@
-# Ignore system files
+
+node_modules/
+
+
 .DS_Store
 Thumbs.db
 
-# VS Code settings
-.vscode/
 
-# Node modules (if using npm)
-node_modules/
+.env
+
+
+*.log
+
+
+dist/
+build/
